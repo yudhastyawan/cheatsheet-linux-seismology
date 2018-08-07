@@ -1,0 +1,51 @@
+1) First Install needed packages:
+	sudo apt-get install make
+	sudo apt-get install gcc
+	sudo apt-get install gfortran
+	sudo apt-get install xorg-dev
+	sudo apt-get install libncurses5-dev
+	sudo apt-get install gawk
+	sudo apt-get install gv
+	sudo apt-get install ImageMagick
+
+2) uncompress "NP330.May-08-2016.zip" in your home folder
+
+3) change dictory:
+cd ~/PROGRAMS.330
+
+4) use the following command:
+	./Setup
+* Then the result should be like this:
+	Checking for existence of bin and lib directories
+	Directory bin exists
+	Directory lib exists
+	Usage: Setup SOL WIN32 SOL-EGCS LINUX LINUX64 CYGWIN OSX
+	SOL
+	SUN Solaris Compilers
+	SOL-GNU SUN Solaris with gcc/g77 compilers
+	CYGWIN
+	CYGWIN 98/NT/2K/XP gcc/g77 Compilers
+	CYGWIN40 CYGWIN 98/NT/2K/XP gcc/gfortran Compilers
+	LINUX
+	Linux with gcc/g77 compilers
+	LINUX40 Linux with gcc/gfortran compilers
+	LINUX64 Linux 64 bit with gcc/g77 compilers
+	LINUX6440 Linux 64 bit with gcc/gfortran compilers
+	OSX
+	Apple with gcc/g77 compilers
+	OSX40
+	Apple with gcc/gfortran compilers
+	OSF
+	DEC/Compaq ALPHA cc/f77
+
+5) For 64bit linux use:
+	./Setup LINUX64
+   For 32bit linux use:
+	./Setup LINUX40
+
+6) If everything is correct, enter the command:
+	./C
+
+to “make” everything.
+
+Source File: http://www.eas.slu.edu/eqc/eqccps.html
