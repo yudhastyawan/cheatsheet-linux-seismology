@@ -58,3 +58,7 @@ fi
 
 echo '#GSAC' >> ~/.bashrc
 echo "export $PATH=$pwd/PROGRAMS.330/bin:$PATH" >> ~/.bashrc
+
+Source ~/.bashrc
+
+echo 'Great Work'
